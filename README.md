@@ -1,28 +1,25 @@
 # CE417-Artificial-Intelligence
-Solutions to Dr. Sameie's CE456: Artificial Intelligence (Sharif University of Technology - Spring 2024) Assignments
+Solutions to Dr. Sameie's CE417: Artificial Intelligence (Sharif University of Technology - Spring 2024) Assignments
 
 ![Artificial-Intelligence Banner](https://github.com/Imanm02/CE417-Artificial-Intelligence/blob/main/Artificial-Intelligence-Background.jpg)
 
-## Course Description
+## Overview
 
-This course provides an in-depth exploration of various artificial intelligence topics, covering theoretical concepts and practical implementations. The course aims to equip students with a solid foundation in AI, enabling them to develop intelligent systems and understand cutting-edge AI technologies.
+This repository contains solutions to the assignments and quiz for the CE417: Artificial Intelligence course at Sharif University of Technology, Spring 2024, taught by Dr. Sameie.
 
 ## Table of Contents
 
-- [Assignments](./Assignments)
-  - Assignment 1
-  - Assignment 2
-  - Assignment 3
-  - Assignment 4
-  - Assignment 5
-  - Assignment 6
-  - Assignment 7
-  - Assignment 8
+- [Overview](#overview)
+- [Assignments](#assignments)
+- [Quiz](#quiz)
 
-- [Quiz](./Quiz)
-  - Quiz 1
-  - Quiz 2
-  - Quiz 3
+## Assignments
+
+In the "Assignment" folder, you will find the solutions to the three practical and theoretical assignments given during the course.
+
+## Quiz
+
+The "Quiz" folder contains the solutions to the theoretical quizzes given during the course.
 
 ## Maintainer
 
