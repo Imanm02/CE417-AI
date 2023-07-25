@@ -1,0 +1,38 @@
+احتمال وقوع $\alpha_i$ که از توزیع نرمال با میانگین صفر و واریانس $\sigma$ پیروی می‌کند، برابر با احتمال وقوع $X = y_i - ax_i - b$ است. در واقع، ما به دنبال محاسبه $P(X = y_i - ax_i - b)$ هستیم، که در آن $X$ از توزیع نرمال با میانگین صفر و واریانس $\sigma$ است.
+
+سپس، تابع لگاریتم درست‌نمایی (log-likelihood) را بررسی می‌کنیم. تابع لگاریتم درست‌نمایی برای مقادیر $(x_1, y_1), (x_2, y_2), \dots, (x_n, y_n)$ و پارامترهای $a$ و $b$ به صورت زیر تعریف می‌شود:
+\begin{align*}
+	\mathcal{L}((x_1,y_1), (x_2,y_2), \dots, (x_n,y_n); a, b) = \mathcal{L}(y_1 - ax_1 - b, y_2 - ax_2 - b, \dots, y_n - ax_n - b; a, b)
+\end{align*}
+سپس این تابع لگاریتم درست‌نمایی را ساده می‌کنیم و به صورت زیر نوشته می‌شود:
+\begin{align*}
+	\mathcal{L} = (\frac{1}{\sqrt{2 \pi \sigma}})^n e^{\frac{-1}{2\sigma} \sum_{i=1}^n (y_i - ax_i - b)^2}
+\end{align*}
+با اعمال لگاریتم بر روی تابع لگاریتم درست‌نمایی، می‌توان آن را به شکل زیر نوشت:
+\begin{align*}
+	\ln(\mathcal{L}) = \frac{-n}{2}\ln(2 \pi \sigma) + \frac{-1}{2\sigma} \sum_{i=1}^n (y_i - ax_i - b)^2
+\end{align*}
+سپس با مشتق‌گیری از این تابع لگاریتم درست‌نمایی نسبت به پارامترهای $a$ و $b$، داریم:
+\begin{align*}
+	\frac{d}{d a}(\ln(\mathcal{L})) = \frac{1}{2\sigma} \sum_{i=1}^n 2x_i (y_i - ax_i - b) = 0
+\end{align*}
+\begin{align*}
+	\frac{d}{d b}(\ln(\mathcal{L})) = \frac{1}{2\sigma} \sum_{i=1}^n 2 (y_i - ax_i - b) = 0
+\end{align*}
+با حل این دو معادله، به مقادیر $a$ و $b$ برسیم. از معادله دوم می‌توان نتیجه گرفت که باید برابر باشد:
+\begin{align*}
+	\bar{y} - a\bar{x} = b
+\end{align*}
+که در آن $\bar{y}$ و $\bar{x}$ به ترتیب نشان دهنده میانگین مقادیر $y_i$ و $x_i$ هستند.
+
+سپس با جایگذاری این رابطه در عبارت اول، به عبارت زیر می‌رسیم:
+\begin{align*}
+	\sum_{i=1}^n x_i (y_i - ax_i - \bar{y} + a\bar{x}) = \sum_{i=1}^n x_i y_i - ax_i^2 - x_i\bar{y} + ax_i\bar{x}
+	= \sum_{i=1}^n (x_i y_i - x_i\bar{y}) - \sum_{i=1}^n (ax_i^2 - ax_i\bar{x}) = 0
+\end{align*}
+بنابراین، می‌توان $a$ را به صورت زیر محاسبه کرد:
+\begin{align*}
+	a = \frac{\sum_{i=1}^{n} (x_i-\bar{x})(y_i-\bar{y})}{\sum_{i=1}^n (x_i-\bar{x})^2}
+\end{align*}
+
+همچنین a و b برابر هستند پس برای جواب هر دو بخش سوال داریم این را.

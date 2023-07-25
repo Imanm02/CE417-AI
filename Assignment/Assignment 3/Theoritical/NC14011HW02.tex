@@ -1,0 +1,157 @@
+\documentclass[12pt]{article}
+
+\usepackage[a4paper,margin=2cm,top=2cm,bottom=2cm,xetex]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{color,xcolor}
+\usepackage{graphicx,algorithm,algorithmic,booktabs,multirow, multicol,float,amsfonts}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{flexisym}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{xepersian}
+\usepackage{amsmath}
+\usepackage{physics}
+
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\usepackage{listings}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+morekeywords={self},              % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=none,                         % Any extra options here
+showstringspaces=false
+}}
+
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+%\usepackage{mathtools}
+
+\DeclareFontFamily{U}{matha}{\hyphenchar\font45}
+\DeclareFontShape{U}{matha}{m}{n}{ <-6> matha5 <6-7> matha6 <7-8>
+matha7 <8-9> matha8 <9-10> matha9 <10-12> matha10 <12-> matha12 }{}
+%\DeclareSymbolFont{matha}{U}{matha}{m}{n}
+%
+%\DeclareMathSymbol{\nvartrianglelefteq}{\mathrel}{matha}{"9E}
+%\DeclareMathSymbol{\vartrianglelefteq}{\mathrel}{matha}{"9C}
+
+\newcount\HWcnt
+\def\ttmp#1#2#3#4#5#6#7#8#9|{\def\Wjob{#9}}%
+\expandafter\ttmp\jobname |
+\def\ttmp#1#2#3{\global\HWcnt=#2#3}
+\expandafter\ttmp\Wjob
+
+\settextfont[Scale = 1.0 ,
+             BoldFont = *Bd ,
+             ItalicFont = *It ,
+             BoldItalicFont = *BdIt ,
+             Extension = .ttf
+            ]{XB Niloofar}
+\ExplSyntaxOn
+\cs_set_eq:NN
+\etex_iffontchar:D
+\tex_iffontchar:D
+\cs_undefine:N \c_one
+\int_const:Nn \c_one { 1 }
+\ExplSyntaxOff
+\setdigitfont[Scale = 1.0 ,
+             BoldFont = *Bd ,
+             ItalicFont = *It ,
+             BoldItalicFont = *BdIt ,
+             Extension = .ttf
+            ]{XB Niloofar}
+\renewcommand{\baselinestretch}{1.2}
+\pagestyle{empty}
+
+\makeatletter
+\def\abj@num@i#1{%
+	\ifcase #1\or الف\or ب\or ج\or د\or ه\or و\or ز\or ح\or ط\fi \ifnum #1=\z@ \abjad@zero \fi
+}
+\renewcommand{\theenumi}{\abjad{enumi}}
+\renewcommand{\labelenumi}{\theenumi)}
+\long\def\makeHead#1{%
+	\begin{center}\large
+		\begin{tabular}{@{}p{.33\linewidth}<{\hfill}@{}>{\hfil}p{.33\textwidth}<{}@{}>{\hfill}p{.33\textwidth}@{}}
+            \textbf{تمرین ۳} & & \textbf{ایمان محمدی - 99102207} \\[.5ex]
+            \textbf{نیم‌سال دوم ۱۴۰۱-۱۴۰۲} & &  \textbf{ زمان آپلود: #1}\\[.5ex] \hline\hline
+		\end{tabular}
+	\end{center}\smallskip
+%	\def\theenumii{\arabic{enumii}}\def\theenumi{\alph{enumii}}\def\labelenumi{\theenumi)}\def\labelenumii{\theenumii)}%
+}
+
+\newcommand{\Rule}{\ \hfill\rule{\linewidth}{0.5pt}\hfill\ \par\vspace*{-2ex}\par}
+\newcommand{\DescRule}{\ \hfill\rule{\linewidth}{1pt}\hfill\ \vspace*{-2ex}\par}
+\def\rank{\mathop{\mathrm{rank}}\nolimits}
+
+\begin{document}
+\makeHead{۳۱ اردیبهشت}
+\begin{description}
+%	\item{} \input{description.tex}
+	
+%	\DescRule
+
+	\item{\textbf{سوال 1.}} \input{NC14011HW02-q1.tex}
+	
+	\Rule
+	
+	\item{\textbf{سوال 2.}} \input{NC14011HW02-q2.tex}
+	
+	\Rule
+	
+	\item{\textbf{سوال 3.}} \input{NC14011HW02-q3.tex}
+	
+	\Rule
+	
+	\item{\textbf{سوال 4.}} \input{NC14011HW02-q4.tex}
+	
+	\Rule
+	
+	\item{\textbf{سوال 5.}} \input{NC14011HW02-q5.tex}
+	
+	\Rule
+	
+	\item{\textbf{سوال 6.}} \input{NC14011HW02-q6.tex}
+	
+	\Rule
+	
+	\item{\textbf{سوال 7.}} \input{NC14011HW02-q7.tex}
+	
+	\Rule
+	
+	\vspace*{+10ex}\ \hfill\textbf{موفق باشید.}
+\end{description}
+\end{document}
