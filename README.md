@@ -15,7 +15,7 @@ This repository contains solutions to the assignments and quiz for the CE417: Ar
 
 ## Assignments
 
-In the "Assignment" folder, you will find the solutions to the three practical and theoretical assignments given during the course.
+In the "Assignment" folder, you will find the solutions to the eight practical and theoretical assignments given during the course.
 
 ## Quiz
 
