@@ -1,11 +1,11 @@
 # CE417-Artificial-Intelligence
-Solutions to Dr. Sameie's CE417: Artificial Intelligence (Sharif University of Technology - Spring 2024) Assignments
+Solutions to Dr. Sameie's CE417: Artificial Intelligence (Sharif University of Technology - Spring 2023) Assignments
 
 ![Artificial-Intelligence Banner](https://github.com/Imanm02/CE417-Artificial-Intelligence/blob/main/Artificial-Intelligence-Background.jpg)
 
 ## Overview
 
-This repository contains solutions to the assignments and quiz for the CE417: Artificial Intelligence course at Sharif University of Technology, Spring 2024, taught by Dr. Sameie.
+This repository contains solutions to the assignments and quiz for the CE417: Artificial Intelligence course at Sharif University of Technology, Spring 2023, taught by Dr. Sameie.
 
 ## Table of Contents
 
