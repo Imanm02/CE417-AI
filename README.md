@@ -13,6 +13,7 @@ This repository contains solutions to the assignments and quiz for the CE417: Ar
 - [Assignments](#assignments)
 - [Quiz](#quiz)
 - [Challenge](#challenge)
+- [Maintainer](#maintainer)
 
 ## Assignments
 
