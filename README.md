@@ -1,4 +1,4 @@
-# CE417-Artificial-Intelligence
+# CE417-AI
 Solutions to Dr. Sameie's CE417: Artificial Intelligence (Sharif University of Technology - Spring 2023) Assignments
 
 ![Artificial-Intelligence Banner](https://github.com/Imanm02/CE417-Artificial-Intelligence/blob/main/Artificial-Intelligence-Background.jpg)
