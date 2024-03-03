@@ -12,6 +12,7 @@ This repository contains solutions to the assignments and quiz for the CE417: Ar
 - [Overview](#overview)
 - [Assignments](#assignments)
 - [Quiz](#quiz)
+- [Source](#source)
 - [Challenge](#challenge)
 - [Maintainer](#maintainer)
 
@@ -22,6 +23,10 @@ In the "Assignment" folder, you will find the solutions to the eight practical a
 ## Quiz
 
 The "Quiz" folder contains the solutions to the theoretical quizzes given during the course.
+
+## Source
+
+In the "Source" folder, you will find the resources of the course.
 
 ## Challenge
 
